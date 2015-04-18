@@ -1,0 +1,17 @@
+# Content pointer
+content	RelaxPictures	chrome/content/
+
+# Make content accessible from web pages in Firefox 3
+content	RelaxPictures chrome/content/ contentaccessible=yes
+
+# Overlay browser skin
+overlay chrome://browser/content/browser.xul chrome://RelaxPictures/content/browser.xul
+
+# Language versions
+locale	RelaxPictures	en-US	chrome/locale/en-US/
+
+# Setting reference to extension skin
+skin	 RelaxPictures	classic/1.0 chrome/skin/
+
+# Adding CSS to available toolbar buttons
+style	chrome://global/content/customizeToolbar.xul	chrome://RelaxPictures/skin/skin.css

@@ -1,0 +1,14 @@
+{
+  "name" : "Relax pictures",
+  "version" : "1.5",
+  "description" : "Easy to browse for relax picture right from your chrome",
+  "permissions": [
+    "browsingData"
+  ],
+  "browser_action": {
+     "default_icon": "icon.png",
+     "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "manifest_version": 2  
+}

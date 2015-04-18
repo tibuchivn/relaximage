@@ -1,0 +1,9 @@
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhHayLaURL\XinhHayLaURL\bin\Debug\XinhHayLaURL.exe.config
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhHayLaURL\XinhHayLaURL\bin\Debug\XinhHayLaURL.exe
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhHayLaURL\XinhHayLaURL\bin\Debug\XinhHayLaURL.pdb
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhHayLaURL\XinhHayLaURL\bin\Debug\BOLService.dll
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhHayLaURL\XinhHayLaURL\bin\Debug\HtmlAgilityPack.dll
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhHayLaURL\XinhHayLaURL\bin\Debug\BOLService.pdb
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhHayLaURL\XinhHayLaURL\obj\Debug\XinhHayLaURL.csprojResolveAssemblyReference.cache
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhHayLaURL\XinhHayLaURL\obj\Debug\XinhHayLaURL.exe
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhHayLaURL\XinhHayLaURL\obj\Debug\XinhHayLaURL.pdb

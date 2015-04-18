@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+    <head><title>Relax Pictures Extension Options </title>
+        <script src="jquery-2.1.1.min.js"></script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    Speed Change Image:
+                </td>
+                <td>
+                     <select id="selectSpeed">
+                        <option value="1000" selected="selected">1 second</option>
+                        <option value="2000">2 second</option>
+                        <option value="3000">3 second</option>
+                         <option value="4000">4 second</option>
+                         <option value="5000">5 second</option>
+                         <option value="6000">6 second</option>
+                         <option value="7000">7 second</option>
+                         <option value="8000">8 second</option>
+                         <option value="9000">9 second</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Amount Image for one click
+                </td>
+                <td>
+                    <select id="selectAmountImage">
+                        <option value="10" selected="selected">10</option>
+                        <option value="20">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="300">300</option>
+                        <option value="400">400</option>
+                        <option value="500">500</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center">
+                    <div id="status"></div>
+                    <button id="save">Save</button>
+                </td>
+            </tr>
+        </table>
+    </body>
+    <script src="options.js"></script>
+</html>

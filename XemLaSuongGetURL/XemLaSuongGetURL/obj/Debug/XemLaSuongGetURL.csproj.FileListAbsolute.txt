@@ -1,0 +1,9 @@
+D:\Public\Project_Tools_\DemoDepVDWeb\XemLaSuongGetURL\XemLaSuongGetURL\bin\Debug\XemLaSuongGetURL.exe.config
+D:\Public\Project_Tools_\DemoDepVDWeb\XemLaSuongGetURL\XemLaSuongGetURL\bin\Debug\XemLaSuongGetURL.exe
+D:\Public\Project_Tools_\DemoDepVDWeb\XemLaSuongGetURL\XemLaSuongGetURL\bin\Debug\XemLaSuongGetURL.pdb
+D:\Public\Project_Tools_\DemoDepVDWeb\XemLaSuongGetURL\XemLaSuongGetURL\bin\Debug\BOLService.dll
+D:\Public\Project_Tools_\DemoDepVDWeb\XemLaSuongGetURL\XemLaSuongGetURL\bin\Debug\HtmlAgilityPack.dll
+D:\Public\Project_Tools_\DemoDepVDWeb\XemLaSuongGetURL\XemLaSuongGetURL\bin\Debug\BOLService.pdb
+D:\Public\Project_Tools_\DemoDepVDWeb\XemLaSuongGetURL\XemLaSuongGetURL\obj\Debug\XemLaSuongGetURL.csprojResolveAssemblyReference.cache
+D:\Public\Project_Tools_\DemoDepVDWeb\XemLaSuongGetURL\XemLaSuongGetURL\obj\Debug\XemLaSuongGetURL.exe
+D:\Public\Project_Tools_\DemoDepVDWeb\XemLaSuongGetURL\XemLaSuongGetURL\obj\Debug\XemLaSuongGetURL.pdb

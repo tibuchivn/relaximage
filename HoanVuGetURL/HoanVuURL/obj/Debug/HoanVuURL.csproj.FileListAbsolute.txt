@@ -1,0 +1,9 @@
+D:\Public\Project_Tools_\DemoDepVDWeb\HoanVuGetURL\HoanVuURL\bin\Debug\HoanVuURL.exe.config
+D:\Public\Project_Tools_\DemoDepVDWeb\HoanVuGetURL\HoanVuURL\bin\Debug\HoanVuURL.exe
+D:\Public\Project_Tools_\DemoDepVDWeb\HoanVuGetURL\HoanVuURL\bin\Debug\HoanVuURL.pdb
+D:\Public\Project_Tools_\DemoDepVDWeb\HoanVuGetURL\HoanVuURL\bin\Debug\BOLService.dll
+D:\Public\Project_Tools_\DemoDepVDWeb\HoanVuGetURL\HoanVuURL\bin\Debug\HtmlAgilityPack.dll
+D:\Public\Project_Tools_\DemoDepVDWeb\HoanVuGetURL\HoanVuURL\bin\Debug\BOLService.pdb
+D:\Public\Project_Tools_\DemoDepVDWeb\HoanVuGetURL\HoanVuURL\obj\Debug\HoanVuURL.csprojResolveAssemblyReference.cache
+D:\Public\Project_Tools_\DemoDepVDWeb\HoanVuGetURL\HoanVuURL\obj\Debug\HoanVuURL.exe
+D:\Public\Project_Tools_\DemoDepVDWeb\HoanVuGetURL\HoanVuURL\obj\Debug\HoanVuURL.pdb

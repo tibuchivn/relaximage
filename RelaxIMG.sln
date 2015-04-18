@@ -1,0 +1,147 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOLService", "BOLService\BOLService.csproj", "{4D2A1FF4-1AAB-4252-AC13-C384972EF629}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{07654B9E-84BD-4654-82B0-42AD3901F9A3}"
+	ProjectSection(SolutionItems) = preProject
+		MyExtension_Firefox_\bruceWillis.js = MyExtension_Firefox_\bruceWillis.js
+		myExtension_Chrome_\icon.png = myExtension_Chrome_\icon.png
+		myExtension_Chrome_\jquery-2.1.1.min.js = myExtension_Chrome_\jquery-2.1.1.min.js
+		myExtension_Chrome_\manifest.json = myExtension_Chrome_\manifest.json
+		myExtension_Chrome_\options.html = myExtension_Chrome_\options.html
+		myExtension_Chrome_\options.js = myExtension_Chrome_\options.js
+		myExtension_Chrome_\popup.css = myExtension_Chrome_\popup.css
+		myExtension_Chrome_\popup.html = myExtension_Chrome_\popup.html
+		myExtension_Chrome_\popup.js = myExtension_Chrome_\popup.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extesnsion_", "Extesnsion_", "{EB5CA8F4-DA2C-4F18-A68B-E94401404C55}"
+	ProjectSection(SolutionItems) = preProject
+		myExtension_Chrome_\icon.png = myExtension_Chrome_\icon.png
+		myExtension_Chrome_\jquery-2.1.1.min.js = myExtension_Chrome_\jquery-2.1.1.min.js
+		myExtension_Chrome_\manifest.json = myExtension_Chrome_\manifest.json
+		myExtension_Chrome_\options.html = myExtension_Chrome_\options.html
+		myExtension_Chrome_\options.js = myExtension_Chrome_\options.js
+		myExtension_Chrome_\popup.css = myExtension_Chrome_\popup.css
+		myExtension_Chrome_\popup.html = myExtension_Chrome_\popup.html
+		myExtension_Chrome_\popup.js = myExtension_Chrome_\popup.js
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDownImg", "ServiceDownload\ServiceDownImg\ServiceDownImg.csproj", "{42282F8C-9F2C-4C0E-9116-769A7CE9828A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChanDaiURL", "ChanDaiGetURL\ChanDaiURL\ChanDaiURL.csproj", "{969925DF-0623-41E1-86A6-6CCD3C884FAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepVDURL", "DepVDGetURL\DepVDURL\DepVDURL.csproj", "{5BCFA17B-74D1-47C7-BB4A-82E4EE495AEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoanVuURL", "HoanVuGetURL\HoanVuURL\HoanVuURL.csproj", "{02213117-851B-4C0D-A96B-5A2E39AC2586}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XinhHayLaURL", "XinhHayLaURL\XinhHayLaURL\XinhHayLaURL.csproj", "{DD300694-11D0-489E-AEC1-912F93CF6A4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrucTiepSoURL", "TrucTiepSoGetURL\TrucTiepSoURL\TrucTiepSoURL.csproj", "{50068216-4367-4F63-A046-D127F526EE8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XinhVLURL", "XinhVLGetURL\XinhVLURL\XinhVLURL.csproj", "{0485B04D-A0A0-4B4A-8576-116FC59A81A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XemLaSuongGetURL", "XemLaSuongGetURL\XemLaSuongGetURL\XemLaSuongGetURL.csproj", "{BE3E635F-0455-4CCB-B0E9-193D08208FE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhuNuVNGetURL", "PhuNuVNGetURL\PhuNuVNGetURL\PhuNuVNGetURL.csproj", "{CE30780A-D8B0-4DD1-AC60-DF5390EBCDBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extension_Firefox_", "Extension_Firefox_", "{60653F26-957D-481E-A122-B68D2D4B77AA}"
+	ProjectSection(SolutionItems) = preProject
+		RelaxPictures\chrome\content\browser.xul = RelaxPictures\chrome\content\browser.xul
+		RelaxPictures\chrome\content\bruce-willis.css = RelaxPictures\chrome\content\bruce-willis.css
+		RelaxPictures\chrome\content\bruceWillis.js = RelaxPictures\chrome\content\bruceWillis.js
+		RelaxPictures\chrome.manifest = RelaxPictures\chrome.manifest
+		RelaxPictures\chrome\skin\icon.png = RelaxPictures\chrome\skin\icon.png
+		RelaxPictures\install.rdf = RelaxPictures\install.rdf
+		RelaxPictures\chrome\content\preferences.xul = RelaxPictures\chrome\content\preferences.xul
+		RelaxPictures\defaults\preferences\prefs.js = RelaxPictures\defaults\preferences\prefs.js
+		RelaxPictures\chrome\skin\skin.css = RelaxPictures\chrome\skin\skin.css
+		RelaxPictures\chrome\skin\statusbar.png = RelaxPictures\chrome\skin\statusbar.png
+		RelaxPictures\chrome\skin\toolbarbutton.png = RelaxPictures\chrome\skin\toolbarbutton.png
+		RelaxPictures\chrome\locale\en-US\translations.dtd = RelaxPictures\chrome\locale\en-US\translations.dtd
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XemAnhGetURL", "XemAnhGetURL\XemAnhGetURL\XemAnhGetURL.csproj", "{6FA583C8-E2EC-4EC0-854C-4A86DA8D244B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XiurenOrgURL", "XiurenOrgURL\XiurenOrgURL.csproj", "{256721AE-BA3E-4B5B-BFC8-2B8E8AACE34E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UgirlsComURL", "UgirlsComURL\UgirlsComURL.csproj", "{C15660EF-4021-4588-9BDB-4876301BDEFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckLiveURLImage", "TooCheckLiveImageURL\CheckLiveURLImage\CheckLiveURLImage.csproj", "{7DE197B8-643D-43F8-8645-DDB974B62985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelaxImage", "RelaxImage\RelaxImage.csproj", "{8100C6CD-B06F-4E1B-8E66-9802C03789A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D2A1FF4-1AAB-4252-AC13-C384972EF629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D2A1FF4-1AAB-4252-AC13-C384972EF629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D2A1FF4-1AAB-4252-AC13-C384972EF629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D2A1FF4-1AAB-4252-AC13-C384972EF629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42282F8C-9F2C-4C0E-9116-769A7CE9828A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42282F8C-9F2C-4C0E-9116-769A7CE9828A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42282F8C-9F2C-4C0E-9116-769A7CE9828A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42282F8C-9F2C-4C0E-9116-769A7CE9828A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{969925DF-0623-41E1-86A6-6CCD3C884FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{969925DF-0623-41E1-86A6-6CCD3C884FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{969925DF-0623-41E1-86A6-6CCD3C884FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{969925DF-0623-41E1-86A6-6CCD3C884FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BCFA17B-74D1-47C7-BB4A-82E4EE495AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCFA17B-74D1-47C7-BB4A-82E4EE495AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BCFA17B-74D1-47C7-BB4A-82E4EE495AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BCFA17B-74D1-47C7-BB4A-82E4EE495AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02213117-851B-4C0D-A96B-5A2E39AC2586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02213117-851B-4C0D-A96B-5A2E39AC2586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02213117-851B-4C0D-A96B-5A2E39AC2586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02213117-851B-4C0D-A96B-5A2E39AC2586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD300694-11D0-489E-AEC1-912F93CF6A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD300694-11D0-489E-AEC1-912F93CF6A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD300694-11D0-489E-AEC1-912F93CF6A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD300694-11D0-489E-AEC1-912F93CF6A4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50068216-4367-4F63-A046-D127F526EE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50068216-4367-4F63-A046-D127F526EE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50068216-4367-4F63-A046-D127F526EE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50068216-4367-4F63-A046-D127F526EE8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0485B04D-A0A0-4B4A-8576-116FC59A81A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0485B04D-A0A0-4B4A-8576-116FC59A81A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0485B04D-A0A0-4B4A-8576-116FC59A81A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0485B04D-A0A0-4B4A-8576-116FC59A81A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE3E635F-0455-4CCB-B0E9-193D08208FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3E635F-0455-4CCB-B0E9-193D08208FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3E635F-0455-4CCB-B0E9-193D08208FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3E635F-0455-4CCB-B0E9-193D08208FE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE30780A-D8B0-4DD1-AC60-DF5390EBCDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE30780A-D8B0-4DD1-AC60-DF5390EBCDBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE30780A-D8B0-4DD1-AC60-DF5390EBCDBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE30780A-D8B0-4DD1-AC60-DF5390EBCDBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FA583C8-E2EC-4EC0-854C-4A86DA8D244B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA583C8-E2EC-4EC0-854C-4A86DA8D244B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA583C8-E2EC-4EC0-854C-4A86DA8D244B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA583C8-E2EC-4EC0-854C-4A86DA8D244B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{256721AE-BA3E-4B5B-BFC8-2B8E8AACE34E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{256721AE-BA3E-4B5B-BFC8-2B8E8AACE34E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{256721AE-BA3E-4B5B-BFC8-2B8E8AACE34E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{256721AE-BA3E-4B5B-BFC8-2B8E8AACE34E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C15660EF-4021-4588-9BDB-4876301BDEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C15660EF-4021-4588-9BDB-4876301BDEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C15660EF-4021-4588-9BDB-4876301BDEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C15660EF-4021-4588-9BDB-4876301BDEFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DE197B8-643D-43F8-8645-DDB974B62985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DE197B8-643D-43F8-8645-DDB974B62985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DE197B8-643D-43F8-8645-DDB974B62985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DE197B8-643D-43F8-8645-DDB974B62985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8100C6CD-B06F-4E1B-8E66-9802C03789A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8100C6CD-B06F-4E1B-8E66-9802C03789A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8100C6CD-B06F-4E1B-8E66-9802C03789A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8100C6CD-B06F-4E1B-8E66-9802C03789A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

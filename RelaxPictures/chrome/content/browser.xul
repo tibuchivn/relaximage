@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://RelaxPictures/skin/skin.css" type="text/css"?> 
+<!DOCTYPE window SYSTEM "chrome://RelaxPictures/locale/en-US/translations.dtd">
+<overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/javascript" src="chrome://RelaxPictures/content/bruceWillis.js"></script>
+	 <toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton id="mainToolbarIcon"
+				image='chrome://RelaxPictures/skin/rabit_16x16.png'
+				type="panel"
+				class="toolbarbutton-1 chromeclass-toolbar-additional"
+        oncommand="RunRelaxPictures();">
+			<panel id="toolbarPanel"
+				type="arrow"
+				noautofocus="true"
+				consumeoutsideclicks="true"
+				noautohide="false"
+				onpopupshowing="RunRelaxPictures();"
+				level="parent">
+
+				<vbox id="iframeContainerContainer" align="top">
+					<!--<iframe id="myframe" width="550px" height="600px"/>-->
+				</vbox>
+			</panel>
+		</toolbarbutton>
+</toolbarpalette>
+	 
+	<!-- Statusbar icon -->
+	<!-- <statusbar id="status-bar">
+		<statusbarpanel id="brucewillis-status-bar-icon" src="chrome://RelaxPictures/skin/statusbar.png" tooltiptext="Relax Pictures ^_^" onclick="bruceWillis.run()"/>
+	</statusbar> -->
+	 
+</overlay>

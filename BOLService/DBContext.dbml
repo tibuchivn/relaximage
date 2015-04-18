@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DemoDVD" Class="DBContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=tungtran-pc;Initial Catalog=DemoDVD;Persist Security Info=True;User ID=sa" SettingsObjectName="BOLService.Properties.Settings" SettingsPropertyName="DemoDVDConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ImgLink" Member="ImgLinks">
+    <Type Name="ImgLink">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="linkimg" Type="System.String" DbType="NVarChar(2500) NOT NULL" CanBeNull="false" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IsDownLoaded" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Domain" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Counter" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GroupName" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="IsBadURL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsCheckLive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetRandomImage" Method="GetRandomImage">
+    <Parameter Name="randomOn" Type="System.Int32" DbType="Int" />
+    <Parameter Name="amountReturn" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetRandomImageResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="linkimg" Type="System.String" DbType="NVarChar(2500) NOT NULL" CanBeNull="false" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

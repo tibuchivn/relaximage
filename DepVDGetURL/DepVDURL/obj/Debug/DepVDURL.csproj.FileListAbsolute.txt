@@ -1,0 +1,13 @@
+D:\Public\Project_Tools_\DemoDepVDWeb\DepVDGetURL\DepVDURL\obj\Debug\DepVDURL.csprojResolveAssemblyReference.cache
+D:\Public\Project_Tools_\DemoDepVDWeb\DepVDGetURL\DepVDURL\bin\Debug\DepVDURL.exe.config
+D:\Public\Project_Tools_\DemoDepVDWeb\DepVDGetURL\DepVDURL\bin\Debug\DepVDURL.exe
+D:\Public\Project_Tools_\DemoDepVDWeb\DepVDGetURL\DepVDURL\bin\Debug\DepVDURL.pdb
+D:\Public\Project_Tools_\DemoDepVDWeb\DepVDGetURL\DepVDURL\bin\Debug\Newtonsoft.Json.dll
+D:\Public\Project_Tools_\DemoDepVDWeb\DepVDGetURL\DepVDURL\bin\Debug\System.Net.Http.Formatting.dll
+D:\Public\Project_Tools_\DemoDepVDWeb\DepVDGetURL\DepVDURL\obj\Debug\DepVDURL.exe
+D:\Public\Project_Tools_\DemoDepVDWeb\DepVDGetURL\DepVDURL\obj\Debug\DepVDURL.pdb
+D:\Public\Project_Tools_\DemoDepVDWeb\DepVDGetURL\DepVDURL\bin\Debug\Newtonsoft.Json.xml
+D:\Public\Project_Tools_\DemoDepVDWeb\DepVDGetURL\DepVDURL\bin\Debug\System.Net.Http.Formatting.xml
+D:\Public\Project_Tools_\DemoDepVDWeb\DepVDGetURL\DepVDURL\bin\Debug\BOLService.dll
+D:\Public\Project_Tools_\DemoDepVDWeb\DepVDGetURL\DepVDURL\bin\Debug\HtmlAgilityPack.dll
+D:\Public\Project_Tools_\DemoDepVDWeb\DepVDGetURL\DepVDURL\bin\Debug\BOLService.pdb

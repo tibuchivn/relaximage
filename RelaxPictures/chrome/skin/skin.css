@@ -1,0 +1,15 @@
+/* skin.css */
+/* Style in View > Toolbars > Customize */
+#brucewillis-toolbar-button
+{
+list-style-image: url(chrome://RelaxPictures/skin/toolbarbutton.png);
+}
+#brucewillis-status-bar-icon
+{
+width: 83px;
+margin: 0 5px;
+}
+
+/* status-bar.png */
+
+/* toolbar-button.png */

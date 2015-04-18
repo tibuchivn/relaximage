@@ -1,0 +1,17 @@
+D:\Public\Project_Tools_\DemoDepVDWeb\BOLService\bin\Release\BOLService.dll.config
+D:\Public\Project_Tools_\DemoDepVDWeb\BOLService\bin\Release\BOLService.dll
+D:\Public\Project_Tools_\DemoDepVDWeb\BOLService\bin\Release\BOLService.pdb
+D:\Public\Project_Tools_\DemoDepVDWeb\BOLService\obj\Release\BOLService.csprojResolveAssemblyReference.cache
+D:\Public\Project_Tools_\DemoDepVDWeb\BOLService\obj\Release\BOLService.dll
+D:\Public\Project_Tools_\DemoDepVDWeb\BOLService\obj\Release\BOLService.pdb
+E:\Source_\RelaxImage\BOLService\bin\Release\BOLService.dll.config
+E:\Source_\RelaxImage\BOLService\bin\Release\BOLService.dll
+E:\Source_\RelaxImage\BOLService\bin\Release\BOLService.pdb
+E:\Source_\RelaxImage\BOLService\obj\Release\BOLService.dll
+E:\Source_\RelaxImage\BOLService\obj\Release\BOLService.pdb
+E:\Source_\RelaxIMG\BOLService\bin\Release\BOLService.dll.config
+E:\Source_\RelaxIMG\BOLService\bin\Release\BOLService.dll
+E:\Source_\RelaxIMG\BOLService\bin\Release\BOLService.pdb
+E:\Source_\RelaxIMG\BOLService\obj\Release\BOLService.csprojResolveAssemblyReference.cache
+E:\Source_\RelaxIMG\BOLService\obj\Release\BOLService.dll
+E:\Source_\RelaxIMG\BOLService\obj\Release\BOLService.pdb

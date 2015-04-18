@@ -1,0 +1,9 @@
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhVLGetURL\XinhVLURL\bin\Debug\XinhVLURL.exe.config
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhVLGetURL\XinhVLURL\bin\Debug\XinhVLURL.exe
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhVLGetURL\XinhVLURL\bin\Debug\XinhVLURL.pdb
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhVLGetURL\XinhVLURL\bin\Debug\BOLService.dll
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhVLGetURL\XinhVLURL\bin\Debug\HtmlAgilityPack.dll
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhVLGetURL\XinhVLURL\bin\Debug\BOLService.pdb
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhVLGetURL\XinhVLURL\obj\Debug\XinhVLURL.csprojResolveAssemblyReference.cache
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhVLGetURL\XinhVLURL\obj\Debug\XinhVLURL.exe
+D:\Public\Project_Tools_\DemoDepVDWeb\XinhVLGetURL\XinhVLURL\obj\Debug\XinhVLURL.pdb
