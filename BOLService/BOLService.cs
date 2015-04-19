@@ -98,8 +98,11 @@ namespace BOLService
             foreach (var link in lst)
             {
                 var obj = _context.ImgLinks.FirstOrDefault(o => o.ID == link.ID);
-                if(obj != null)
+                if (obj != null)
+                {
                     obj.IsDownLoaded = true;
+                    obj.UpdateDate = DateTime.Now;
+                }                    
             }
             _context.SubmitChanges();
         }
@@ -194,6 +197,7 @@ namespace BOLService
                 //TODO: update bad url
                 obj.IsBadURL = true;
                 obj.IsCheckLive = true;
+                obj.UpdateDate = DateTime.Now;
                 _context.SubmitChanges();
             }
         }
@@ -205,6 +209,7 @@ namespace BOLService
             {
                 //TODO: update bad url
                 obj.IsBadURL = false;
+                obj.UpdateDate = DateTime.Now;
                 _context.SubmitChanges();
             }
         }
@@ -233,6 +238,7 @@ namespace BOLService
             if (obj != null)
             {
                 obj.IsCheckLive = true;
+                obj.UpdateDate = DateTime.Now;
                 _context.SubmitChanges();
             }
         }

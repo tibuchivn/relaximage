@@ -22,6 +22,5 @@ E:\Source_\RelaxIMG\PhuNuVNGetURL\PhuNuVNGetURL\bin\Release\PhuNuVNGetURL.pdb
 E:\Source_\RelaxIMG\PhuNuVNGetURL\PhuNuVNGetURL\bin\Release\BOLService.dll
 E:\Source_\RelaxIMG\PhuNuVNGetURL\PhuNuVNGetURL\bin\Release\HtmlAgilityPack.dll
 E:\Source_\RelaxIMG\PhuNuVNGetURL\PhuNuVNGetURL\bin\Release\BOLService.pdb
-E:\Source_\RelaxIMG\PhuNuVNGetURL\PhuNuVNGetURL\obj\Release\PhuNuVNGetURL.csprojResolveAssemblyReference.cache
 E:\Source_\RelaxIMG\PhuNuVNGetURL\PhuNuVNGetURL\obj\Release\PhuNuVNGetURL.exe
 E:\Source_\RelaxIMG\PhuNuVNGetURL\PhuNuVNGetURL\obj\Release\PhuNuVNGetURL.pdb

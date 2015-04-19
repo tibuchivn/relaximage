@@ -64,6 +64,7 @@ namespace ChanDaiURL
                                 linkimg = strResult,
                                 Counter = i.ToString(),
                                 CreateDate = DateTime.Now,
+                                UpdateDate = DateTime.Now,
                                 Domain = "chandai.tv"
 
                             };

@@ -368,7 +368,7 @@ namespace DepVDURL
                 List<ImgLink> lst = new List<ImgLink>();
                 var web = new HtmlWeb();
                 int start = 1;
-                int end = 5; //TODO: current max value 24
+                int end = 37; //TODO: current max value 37
 
                 for (int i = start; i < end; i++)
                 {
@@ -432,7 +432,7 @@ namespace DepVDURL
                 List<ImgLink> lst = new List<ImgLink>();
                 var web = new HtmlWeb();
                 int start = 1;
-                int end = 5; //TODO: current max value 24
+                int end = 20; //TODO: current max value 20
 
                 for (int i = start; i < end; i++)
                 {
@@ -560,7 +560,7 @@ namespace DepVDURL
                 List<ImgLink> lst = new List<ImgLink>();
                 var web = new HtmlWeb();
                 int start = 1;
-                int end = 5; //TODO: current max value 24
+                int end = 5; //TODO: current max value 30
 
                 for (int i = start; i < end; i++)
                 {
@@ -716,6 +716,7 @@ namespace DepVDURL
                                         Category = category,
                                         Counter = strCounter,
                                         CreateDate = DateTime.Now,
+                                        UpdateDate = DateTime.Now,
                                         Domain = "depvd.com",
                                         GroupName = strTitle,
                                         linkimg = strLink

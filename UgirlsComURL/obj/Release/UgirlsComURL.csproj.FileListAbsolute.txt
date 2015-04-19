@@ -22,6 +22,5 @@ E:\Source_\RelaxIMG\UgirlsComURL\bin\Release\UgirlsComURL.pdb
 E:\Source_\RelaxIMG\UgirlsComURL\bin\Release\BOLService.dll
 E:\Source_\RelaxIMG\UgirlsComURL\bin\Release\HtmlAgilityPack.dll
 E:\Source_\RelaxIMG\UgirlsComURL\bin\Release\BOLService.pdb
-E:\Source_\RelaxIMG\UgirlsComURL\obj\Release\UgirlsComURL.csprojResolveAssemblyReference.cache
 E:\Source_\RelaxIMG\UgirlsComURL\obj\Release\UgirlsComURL.exe
 E:\Source_\RelaxIMG\UgirlsComURL\obj\Release\UgirlsComURL.pdb
