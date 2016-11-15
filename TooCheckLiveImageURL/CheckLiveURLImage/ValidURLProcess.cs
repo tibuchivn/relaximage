@@ -15,15 +15,16 @@ namespace CheckLiveURLImage
         public void ProcessCheckURL()
         {
             var _bolService = new BOLService.BOLService();
-            var lstImgs = _bolService.GetListImgForCheck(50);
+            var lstImgs = _bolService.GetListImgForCheck(150);
 
             var parallelOptions = new ParallelOptions();
-            parallelOptions.MaxDegreeOfParallelism = 4;
+            parallelOptions.MaxDegreeOfParallelism = 100;
             Parallel.ForEach(lstImgs, ThreadProcessData);
         }
 
         private void ThreadProcessData(ImgLink img)
         {
+            Console.WriteLine("Start Check: " + img.linkimg);
             var _bolService = new BOLService.BOLService();
             try
             {
@@ -34,11 +35,11 @@ namespace CheckLiveURLImage
                     if (!resp.ContentType.ToLower(CultureInfo.InvariantCulture).StartsWith("image/"))
                     {
                         Console.WriteLine("Invalid: " + img.linkimg);
-                        _bolService.UpdateBadURL(img.ID);
+                        _bolService.UpdateBadURL(img.ID, true);
                     }
                     else
                     {
-                        _bolService.UpdateStatus(img.ID);
+                        _bolService.UpdateBadURL(img.ID, false);
                     }
                 }
             }
@@ -47,6 +48,7 @@ namespace CheckLiveURLImage
                 Console.WriteLine("Error: " + ex.Message);
                 _bolService.UpdateBadURL(img.ID);
             }
+            Console.WriteLine("End Check: " + img.linkimg);
         }
     }
 }

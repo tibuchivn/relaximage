@@ -98,11 +98,8 @@ namespace BOLService
             foreach (var link in lst)
             {
                 var obj = _context.ImgLinks.FirstOrDefault(o => o.ID == link.ID);
-                if (obj != null)
-                {
+                if(obj != null)
                     obj.IsDownLoaded = true;
-                    obj.UpdateDate = DateTime.Now;
-                }                    
             }
             _context.SubmitChanges();
         }
@@ -197,7 +194,18 @@ namespace BOLService
                 //TODO: update bad url
                 obj.IsBadURL = true;
                 obj.IsCheckLive = true;
-                obj.UpdateDate = DateTime.Now;
+                _context.SubmitChanges();
+            }
+        }
+
+        public void UpdateBadURL(int id, bool isbadurl)
+        {
+            var obj = _context.ImgLinks.FirstOrDefault(o => o.ID == id);
+            if (obj != null)
+            {
+                //TODO: update bad url
+                obj.IsBadURL = isbadurl;
+                obj.IsCheckLive = true;
                 _context.SubmitChanges();
             }
         }
@@ -209,7 +217,6 @@ namespace BOLService
             {
                 //TODO: update bad url
                 obj.IsBadURL = false;
-                obj.UpdateDate = DateTime.Now;
                 _context.SubmitChanges();
             }
         }
@@ -228,7 +235,7 @@ namespace BOLService
 
         public List<ImgLink> GetListImgForCheck(int amount)
         {
-            var lst = _context.ImgLinks.Where(o => (o.IsBadURL == null || o.IsBadURL == false) &&  (o.IsCheckLive == null || o.IsCheckLive == false));
+            var lst = _context.ImgLinks.Where(o => o.IsBadURL.HasValue == false  );
             return lst.OrderBy(o => o.ID).Take(amount).ToList();
         }
 
@@ -238,9 +245,46 @@ namespace BOLService
             if (obj != null)
             {
                 obj.IsCheckLive = true;
-                obj.UpdateDate = DateTime.Now;
                 _context.SubmitChanges();
             }
+        }
+
+        public List<ImgLink> GetTopLastest(string strDomain, int pageSize, int pageIndex,ref int? totals)
+        {
+            return _context.GetListImgByDomain(strDomain, pageIndex, pageSize, ref totals)
+                .Select(o=> new ImgLink()
+                {
+                    ID = o.ImgID,
+                    linkimg = o.ImgLink
+                })
+                .ToList();
+        }
+
+        public List<GetRandomImageByConditionResult> GetRandomImage(int amount, int isNice, int hotLevel, string strDomain)
+        {
+            if (amount > 0)
+            {
+                return _context.GetRandomImageByCondition(isNice, hotLevel, strDomain, amount).ToList();
+            }
+            return null;
+        }
+
+        public void UpdateNiceURL(int id)
+        {
+            var obj = _context.ImgLinks.FirstOrDefault(o => o.ID == id);
+            if (obj != null)
+            {
+                //TODO: update bad url
+                obj.IsBadURL = false;
+                obj.IsCheckLive = true;
+                obj.IsNice = true;
+                _context.SubmitChanges();
+            }
+        }
+
+        public void ImportVietLottPage(List<VietlottVNDto> lst)
+        {
+            ;
         }
     }
 }

@@ -13,7 +13,13 @@ namespace XemAnhGetURL
     {
         static void Main(string[] args)
         {
-            Daily_AnhGirlXinh();
+            Daily_AnhGirlXinh("http://www.xemanh.net/category/anh-girl-xinh/anh-bikini/page");
+            Daily_AnhGirlXinh("http://www.xemanh.net/category/anh-girl-xinh/anh-nguoi-mau/page");
+            Daily_AnhGirlXinh("http://www.xemanh.net/category/hoa-hau-viet-nam/page");
+            Daily_AnhGirlXinh("http://www.xemanh.net/category/anh-girl-xinh/hot-girl-nuoc-ngoai/page");
+            Daily_AnhGirlXinh("http://www.xemanh.net/category/anh-girl-xinh/anh-dien-vien/page");
+
+            //Daily_AnhGirlXinh("http://www.xemanh.net/category/anh-girl-xinh/page");
 
             //FirstRun_AnhGirlXinh();
 
@@ -168,7 +174,7 @@ namespace XemAnhGetURL
             Console.WriteLine("Finish AnhGirlXinh ^_^");
         }
 
-        public static void Daily_AnhGirlXinh()
+        public static void Daily_AnhGirlXinh(string strHost)
         {
             var bolService = new BOLService.BOLService();
             List<ImgLink> lst = new List<ImgLink>();
@@ -181,7 +187,8 @@ namespace XemAnhGetURL
             {
                 try
                 {
-                    string strURL = "http://www.xemanh.net/category/anh-girl-xinh/page/" + i;
+                    //strHost = http://www.xemanh.net/category/anh-girl-xinh/page/
+                    string strURL = strHost + "/" + i;
                     Console.WriteLine(i + " : " + strURL);
 
                     var doc = web.Load(strURL);

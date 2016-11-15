@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DemoDVD" Class="DBContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=MAYNHA;Initial Catalog=DemoDVD;Persist Security Info=True;User ID=sa" SettingsObjectName="BOLService.Properties.Settings" SettingsPropertyName="DemoDVDConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=52.77.65.216\SQL;Initial Catalog=DemoDVD;Persist Security Info=True;User ID=chum" SettingsObjectName="BOLService.Properties.Settings" SettingsPropertyName="DemoDVDConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ImgLink" Member="ImgLinks">
     <Type Name="ImgLink">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -12,7 +12,23 @@
       <Column Name="Category" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="IsBadURL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="IsCheckLive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HotLevel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsNice" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VietlottVN" Member="VietlottVNs">
+    <Type Name="VietlottVN">
+      <Column Name="VietLottID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DrawId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DayPrize" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FullBlockNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NumberOne" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumberTwo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumberThree" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumberFour" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumberFive" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumberSix" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ImportDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Function Name="dbo.GetRandomImage" Method="GetRandomImage">
@@ -22,6 +38,37 @@
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="linkimg" Type="System.String" DbType="NVarChar(2500) NOT NULL" CanBeNull="false" />
       <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetListImgByDomain" Method="GetListImgByDomain">
+    <Parameter Name="DomainName" Parameter="domainName" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="PageIndex" Parameter="pageIndex" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PageSize" Parameter="pageSize" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TotalRecords" Parameter="totalRecords" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="GetListImgByDomainResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ImgID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ImgLink" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetRandomImageByCondition" Method="GetRandomImageByCondition">
+    <Parameter Name="IsNice" Parameter="isNice" Type="System.Int32" DbType="Int" />
+    <Parameter Name="HotLeve" Parameter="hotLeve" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Domain" Parameter="domain" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="amountReturn" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetRandomImageByConditionResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="linkimg" Type="System.String" DbType="NVarChar(2500) NOT NULL" CanBeNull="false" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IsDownLoaded" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Domain" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Counter" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GroupName" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="IsBadURL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsCheckLive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="HotLevel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsNice" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

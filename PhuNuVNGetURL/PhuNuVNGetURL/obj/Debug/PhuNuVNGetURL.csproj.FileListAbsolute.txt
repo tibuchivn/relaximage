@@ -1,9 +1,0 @@
-D:\Public\Project_Tools_\DemoDepVDWeb\PhuNuVNGetURL\PhuNuVNGetURL\bin\Debug\PhuNuVNGetURL.exe.config
-D:\Public\Project_Tools_\DemoDepVDWeb\PhuNuVNGetURL\PhuNuVNGetURL\bin\Debug\PhuNuVNGetURL.exe
-D:\Public\Project_Tools_\DemoDepVDWeb\PhuNuVNGetURL\PhuNuVNGetURL\bin\Debug\PhuNuVNGetURL.pdb
-D:\Public\Project_Tools_\DemoDepVDWeb\PhuNuVNGetURL\PhuNuVNGetURL\bin\Debug\BOLService.dll
-D:\Public\Project_Tools_\DemoDepVDWeb\PhuNuVNGetURL\PhuNuVNGetURL\bin\Debug\HtmlAgilityPack.dll
-D:\Public\Project_Tools_\DemoDepVDWeb\PhuNuVNGetURL\PhuNuVNGetURL\bin\Debug\BOLService.pdb
-D:\Public\Project_Tools_\DemoDepVDWeb\PhuNuVNGetURL\PhuNuVNGetURL\obj\Debug\PhuNuVNGetURL.exe
-D:\Public\Project_Tools_\DemoDepVDWeb\PhuNuVNGetURL\PhuNuVNGetURL\obj\Debug\PhuNuVNGetURL.pdb
-D:\Public\Project_Tools_\DemoDepVDWeb\PhuNuVNGetURL\PhuNuVNGetURL\obj\Debug\PhuNuVNGetURL.csprojResolveAssemblyReference.cache

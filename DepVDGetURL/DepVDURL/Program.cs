@@ -15,11 +15,11 @@ namespace DepVDURL
 
         static void Main()
         {
-            NewSexyGirl();
+            //NewSexyGirl();
             HomeSexyGirl();
-            US_UK();
-            Asia();
-            VietNam();
+            //US_UK();
+            //Asia();
+            //VietNam();
 
             //RunAsync().Wait(); //TODO: expire
         }
@@ -368,7 +368,7 @@ namespace DepVDURL
                 List<ImgLink> lst = new List<ImgLink>();
                 var web = new HtmlWeb();
                 int start = 1;
-                int end = 37; //TODO: current max value 37
+                int end = 20 ;//5; //TODO: current max value 24
 
                 for (int i = start; i < end; i++)
                 {
@@ -432,7 +432,7 @@ namespace DepVDURL
                 List<ImgLink> lst = new List<ImgLink>();
                 var web = new HtmlWeb();
                 int start = 1;
-                int end = 20; //TODO: current max value 20
+                int end = 20 ;//5; //TODO: current max value 24
 
                 for (int i = start; i < end; i++)
                 {
@@ -496,7 +496,7 @@ namespace DepVDURL
                 List<ImgLink> lst = new List<ImgLink>();
                 var web = new HtmlWeb();
                 int start = 1;
-                int end = 5; //TODO: current max value 24
+                int end = 20 ;//20 - 5; //TODO: current max value 24
 
                 for (int i = start; i < end; i++)
                 {
@@ -559,10 +559,10 @@ namespace DepVDURL
                 var bolService = new BOLService.BOLService();
                 List<ImgLink> lst = new List<ImgLink>();
                 var web = new HtmlWeb();
-                int start = 1;
-                int end = 5; //TODO: current max value 30
+                int start = 5;
+                int end = 0;//5; //TODO: current max value 24
 
-                for (int i = start; i < end; i++)
+                for (int i = start; i > end; i--)
                 {
                     string strURL = "http://www.depvd.com/p" + i;
                     var doc = web.Load(strURL);
@@ -624,7 +624,7 @@ namespace DepVDURL
                 List<ImgLink> lst = new List<ImgLink>();
                 var web = new HtmlWeb();
                 int start = 1;
-                int end = 5; //TODO: current max value 24
+                int end = 20;// 5; //TODO: current max value 24
 
                 for (int i = start; i < end; i++)
                 {
@@ -685,8 +685,11 @@ namespace DepVDURL
             try
             {
                 var bolService = new BOLService.BOLService();
-                if (bolService.CheckExistLinkByDomain(strCounter, "depvd.com")) return;
-
+                if (bolService.CheckExistLinkByDomain(strCounter, "depvd.com"))
+                {
+                    Console.WriteLine("Exist ^_^: " + strPage);
+                    return;
+                }
                 var lst = new List<BOLService.ImgLink>();
                 var web = new HtmlWeb();
                 var doc = web.Load(strPage);
@@ -716,7 +719,6 @@ namespace DepVDURL
                                         Category = category,
                                         Counter = strCounter,
                                         CreateDate = DateTime.Now,
-                                        UpdateDate = DateTime.Now,
                                         Domain = "depvd.com",
                                         GroupName = strTitle,
                                         linkimg = strLink

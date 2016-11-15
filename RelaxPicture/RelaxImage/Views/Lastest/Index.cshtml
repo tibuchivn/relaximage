@@ -1,0 +1,69 @@
+﻿@model RelaxImage.Models.ImageDisplay
+ 
+@{
+    Layout = null;
+}
+<title>Relax for fun ^_^</title>
+<style type="text/css">
+    body {
+        background-color: #2b2b2d;
+    }
+
+    .vcenter {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .hcenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<a id="lnkDetail" target="_blank" href='@Url.Action("Detail", "Home")?id=@Model.ListImg.First().ID' >
+    <img class="vcenter hcenter" id="imgShow" index="0" src="@Model.ListImg.First().linkimg" />
+    @*style="max-height: 666px;"*@
+</a>
+
+
+@for (int i = 0; i < Model.ListImg.Count; i++)
+{
+    <input type="hidden" id="@i" value="@Model.ListImg[i].linkimg" key="@Model.ListImg[i].ID"  />
+}
+<script src="~/Scripts/jquery-ui-1.11.4.js"></script>
+<script src="~/Scripts/jquery-2.2.0.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+@*<script src="~/Scripts/jquery-1.8.2.js"></script>
+<script src="~/Scripts/jquery-ui-1.8.24.js"></script>
+<link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />*@
+<script>
+    $(function () {
+
+        var vHeight = window.innerHeight;
+        $('#imgShow').css('max-height', vHeight - 18);
+
+        setInterval(function () {
+            ChangeImage();
+        }, 3000); //60000
+    });
+
+    function ChangeImage() {
+
+        var v1 = parseInt($('#imgShow').attr("index"), 10);
+
+        var v = v1 + 1;
+        //alert(v);
+        $("#imgShow").attr("src", $('#' + v).val());
+        $("#imgShow").attr("index", v);
+
+        //set link image
+        var vKey = $('#' + v).attr('key');
+        $('#lnkDetail').attr('href', '@Url.Action("Detail","Home")' + '/' + vKey);
+        //
+
+        if (v + 1 == '@Model.PageSize') {
+            $("#imgShow").attr("index", 0);
+        }
+    }
+</script>
+

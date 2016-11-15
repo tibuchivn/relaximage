@@ -14,7 +14,8 @@ namespace ChanDaiURL
         private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         static void Main(string[] args)
         {
-            GetChanDaiPhoto();
+            //TODO: chandai.tv - Deadl rùi.
+            //GetChanDaiPhoto();
         }
 
         private static void GetChanDaiPhoto()
@@ -64,7 +65,6 @@ namespace ChanDaiURL
                                 linkimg = strResult,
                                 Counter = i.ToString(),
                                 CreateDate = DateTime.Now,
-                                UpdateDate = DateTime.Now,
                                 Domain = "chandai.tv"
 
                             };

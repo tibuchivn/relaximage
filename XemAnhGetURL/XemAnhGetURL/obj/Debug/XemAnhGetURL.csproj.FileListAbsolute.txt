@@ -1,9 +1,0 @@
-D:\Public\Project_Tools_\DemoDepVDWeb\XemAnhGetURL\XemAnhGetURL\obj\Debug\XemAnhGetURL.csprojResolveAssemblyReference.cache
-D:\Public\Project_Tools_\DemoDepVDWeb\XemAnhGetURL\XemAnhGetURL\bin\Debug\XemAnhGetURL.exe.config
-D:\Public\Project_Tools_\DemoDepVDWeb\XemAnhGetURL\XemAnhGetURL\bin\Debug\XemAnhGetURL.exe
-D:\Public\Project_Tools_\DemoDepVDWeb\XemAnhGetURL\XemAnhGetURL\bin\Debug\XemAnhGetURL.pdb
-D:\Public\Project_Tools_\DemoDepVDWeb\XemAnhGetURL\XemAnhGetURL\bin\Debug\BOLService.dll
-D:\Public\Project_Tools_\DemoDepVDWeb\XemAnhGetURL\XemAnhGetURL\bin\Debug\HtmlAgilityPack.dll
-D:\Public\Project_Tools_\DemoDepVDWeb\XemAnhGetURL\XemAnhGetURL\bin\Debug\BOLService.pdb
-D:\Public\Project_Tools_\DemoDepVDWeb\XemAnhGetURL\XemAnhGetURL\obj\Debug\XemAnhGetURL.exe
-D:\Public\Project_Tools_\DemoDepVDWeb\XemAnhGetURL\XemAnhGetURL\obj\Debug\XemAnhGetURL.pdb

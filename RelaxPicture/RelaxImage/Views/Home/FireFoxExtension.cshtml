@@ -1,0 +1,148 @@
+﻿@model RelaxImage.Models.ImageDisplay
+
+@{
+    Layout = null;
+}
+<title>Relax for fun ^_^</title>
+<style type="text/css">
+    body {
+        background-color: #2b2b2d;
+    }
+
+    .vcenter {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .hcenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .CoverImage {
+        display: block;
+        position: relative;
+        text-decoration: none;
+    }
+</style>
+
+<a id="lnkDetail" class="CoverImage" target="_blank" href='@Url.Action("Detail", "Home")?id=@Model.ListImg.First().ID'>
+    <img class="vcenter hcenter" id="imgShow" index="0" src="@Model.ListImg.First().linkimg" />
+</a>
+
+<div id="divContentLoop">
+    @for (int i = 0; i < Model.ListImg.Count; i++)
+    {
+        <input type="hidden" id="@i" value="@Model.ListImg[i].linkimg" key="@Model.ListImg[i].ID" />
+    }
+</div>
+
+<script src="~/Scripts/jquery-ui-1.11.4.js"></script>
+<script src="~/Scripts/jquery-2.2.0.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+@*<script src="~/Scripts/jquery-1.8.2.js"></script>
+<script src="~/Scripts/jquery-ui-1.8.24.js"></script>
+<link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />*@
+<script>
+    var pageSize = 0;
+    var pageIndex = 0;
+    $(function () {
+        var vHeight = 600;//window.innerHeight;
+        $('#imgShow').css('max-height', vHeight - 18);
+
+        pageIndex = '@Model.PageIndex';
+        pageSize = '@Model.PageSize';
+
+        setInterval(isRightHandControl, 1500);
+    });
+
+    function ChangeImage() {
+        var v1 = parseInt($('#imgShow').attr("index"), 10);
+        var v = v1 + 1;
+        //alert(v);
+        $("#imgShow").attr("src", $('#' + v).val());
+        $("#imgShow").attr("index", v);
+    }
+
+    var rightHandControl = false;
+    var isRightHandControl = function () {
+        if (rightHandControl == false) {
+            var v1 = parseInt($('#imgShow').attr("index"), 10);
+            var v = v1 + 1;
+            //alert(v);
+            $("#imgShow").attr("src", $('#' + v).val());
+            $("#imgShow").attr("index", v);
+
+            //set link image
+            var vKey = $('#' + v).attr('key');
+            $('#lnkDetail').attr('href', '@Url.Action("Detail","Home")' + '/' + vKey);
+            //
+            //\
+            if (v + 1 == pageSize || vKey == 0 || vKey == undefined) {
+                pageIndex += 1;
+                GenerateNewImages();
+            }
+            if (v > pageSize) {
+                $("#imgShow").attr("index", 0);
+            }
+
+        } else {
+            for (var i = 1; i < isRightHandControl; i++) {
+                window.clearInterval(i);
+            }
+            clearInterval(isRightHandControl);
+
+            for (var j = 1; i < isLeftHandControl; i++) {
+                window.clearInterval(j);
+            }
+            clearInterval(isLeftHandControl);
+
+            //for clearing all intervals
+        }
+    };
+
+    var leftHandControl = false;
+    var isLeftHandControl = function () {
+        if (leftHandControl == false) {
+            var v1 = parseInt($('#imgShow').attr("index"), 10);
+            var v = v1 - 1;
+            //alert(v);
+            $("#imgShow").attr("src", $('#' + v).val());
+            $("#imgShow").attr("index", v);
+
+            //set link image
+            var vKey = $('#' + v).attr('key');
+            $('#lnkDetail').attr('href', '@Url.Action("Detail","Home")' + '/' + vKey);
+            //
+
+            if (v == 0 || vKey == 0 || vKey == undefined) {
+                pageIndex -= 1;
+                GenerateNewImages();
+            }
+            $("#imgShow").attr("index", 0);
+        } else {
+            for (var i = 1; i < isRightHandControl; i++) {
+                window.clearInterval(i);
+            }
+            clearInterval(isRightHandControl);
+
+            for (var j = 1; i < isLeftHandControl; i++) {
+                window.clearInterval(j);
+            }
+            clearInterval(isLeftHandControl);
+        }
+    };
+
+    function GenerateNewImages() {
+        $.get('@Url.Action("GetNewImages", "Home")', { iPageIndex: pageIndex, iPageSize: pageSize }, function (lstImg) {
+            $('#divContentLoop').html('');
+            var iCuser = 0;
+            $.each(lstImg, function (i, value) {
+                $('#divContentLoop').append("<input type='hidden' id=" + iCuser + " value= " + value.Name + " key= '" + value.Id + "' />");
+                iCuser += 1;
+            });
+            $("#imgShow").attr("index", "0");
+        });
+    }
+</script>

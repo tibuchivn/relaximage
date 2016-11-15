@@ -23,8 +23,8 @@ namespace UgirlsComURL
                 var bolService = new BOLService.BOLService();
                 List<ImgLink> lst = new List<ImgLink>();
                 var web = new HtmlWeb();
-                int start = 75;
-                int end = 100; //TODO: current max value 75
+                int start = 1;
+                int end = 300; //TODO: current max value 75
 
                 for (int i = start; i <= end; i++)
                 {

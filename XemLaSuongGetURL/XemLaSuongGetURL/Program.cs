@@ -12,7 +12,7 @@ namespace XemLaSuongGetURL
     {
         static void Main(string[] args)
         {
-            //TODO: current run for daily ( only top page )
+            //TODO: Deal rùi.
             SexyGirl();
         }
 

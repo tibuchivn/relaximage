@@ -1,0 +1,150 @@
+﻿@model RelaxImage.Models.ImageDisplay
+
+@{
+    ViewBag.Title = "Đẹp Vô Đối ^_^";
+    Layout = null;
+}
+
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> 
+ <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+ <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+@*<link href="~/Scripts/jquery-ui.css" rel="stylesheet"/>*@
+<link href="~/Content/smartpaginator.css" rel="stylesheet" />
+<script src="~/Scripts/smartpaginator.js"></script>
+@*<script src="~/Scripts/jquery-ui.js"></script>*@
+@*<script src="~/Scripts/jquery-3.1.0.min.js"></script>*@
+<style>
+    .pager {
+        width: 650px !important;
+    }
+</style>
+<br />
+<br />
+<div style="width: 100%">
+    <div style="float: left">
+        <select id="selectDomain">
+            <option value="1">[1] - depvd.com</option>
+            <option value="2">[2] - chandai.tv</option>
+            <option value="3">[3] - photo.hoanvu.net</option>
+            <option value="4">[4] - xinh.hay.la</option>
+            <option value="5">[5] - tructiepso.com</option>
+            <option value="6">[6] - xinhvl.com</option>
+            <option value="7">[7] - xemlasuong.org</option>
+            <option value="8">[8] - phunuvn.net</option>
+            <option value="9">[9] - xemanh.net</option>
+            <option value="10">[10] - xiuren.org</option>
+            <option value="11">[11] - ugirls.com</option>
+            <option selected="selected" value="12">[12] - TGOD.com</option>
+        </select>
+    </div>
+
+    <div style="float: left; margin-left: 100px;">
+        <input type="button" value="Make bad url Selected" onclick="MakeBadUrl();" />
+    </div>
+</div>
+<br />
+<br />
+<div>
+    <div id="smart-paginator">
+    </div>
+    <div class="clear-fix"></div>
+    <br />
+    <div id="lstImageBadUrl" style="float: left;">
+        <table id="tbList">
+            @if (Model.ListImg.Count > 0)
+            {
+                for (int i = 0; i < Model.ListImg.Count; i++)
+                {
+                    <text>
+                        <tr>
+                            <td>
+                                <a href="~/Home/NiceURL/@Model.ListImg[i].ID" target="_blank">Nice URL</a>
+                                <input type="checkbox" id="idImg-@Model.ListImg[i].ID" relaxdvdid="@Model.ListImg[i].ID"/>
+                                <label for="idImg-@Model.ListImg[i].ID">@Model.ListImg[i].linkimg</label>
+                                <br/>
+                                <label for="idImg-@Model.ListImg[i].ID">
+                                    <img src="@Model.ListImg[i].linkimg" style="max-height: 300px; max-width: 200px"/>
+                                </label>
+                                <br/>
+                                <a href="~/Home/BadURL/@Model.ListImg[i].ID" target="_blank">Bad URL</a>
+                                <br/>
+                            </td>
+                        </tr>
+                    </text>
+                }
+            }
+        </table>
+    </div>
+    <br/>
+    
+</div>
+
+<script>
+    $(function () {
+        var pageSize = 10;
+        var totalRecords = @Model.TotalRecords.ToString();
+        var currentPage = @Model.CurrentPage.ToString();
+        $('#smart-paginator').smartpaginator({
+            totalrecords: totalRecords,
+            recordsperpage: pageSize,
+            initval: currentPage,
+            next: 'Next',
+            prev: 'Prev',
+            first: 'First',
+            last: 'Last',
+            theme: 'green',
+            onchange: onChange
+        });
+
+        function onChange(newPageValue) {
+            CompaniesPaging(newPageValue);
+        }
+    });
+    function CompaniesPaging(newValue) {
+        $('#tbList').html('');
+        var vPageSize = 10;
+        var domainId = $('#selectDomain').val();
+        //console.log('DomainID: ' + domainId + ' - PageSize: ' + vPageSize + ' - PageIndex: ' + newValue);
+        $.get('@Url.Action("PagingImage", "Lastest")',
+           {domaind: domainId, pageSize: vPageSize, pageIndex: newValue},
+           function (response) {
+               if (response.success) {
+                   //console.log( response.data);
+                   $.each(response.data, function (index, value) {
+                       var vtr = '<tr> <td> ' +
+                           '<input type="checkbox" id="idImg-' + value.ID + '" RelaxDVDID="' + value.ID + '" />'
+                           + '<label for="idImg-' + value.ID + '">'+value.linkimg+'</label><br/>'
+                           + '<label for="idImg-' + value.ID + '"><img src="' + value.linkimg + '" style="max-height: 300px; max-width: 200px" /></label> '
+                           + '<br/><a href="'+location.protocol + '//' + location.host + '/Home/BadURL/'+value.ID+'" target="_blank" >Bad URL</a>'
+                           + '<br/><a href="'+location.protocol + '//' + location.host + '/Home/NiceURL/'+value.ID+'" target="_blank" >Nice URL</a>'
+                           + '</td> </tr>';
+                       console.log(vtr);
+                       $("#tbList").append(vtr);
+                   });
+               } else {
+                   alert("Have error, please try again.");
+               }
+           }).done(function() {
+               //alert( "second success" );
+           }).fail(function() {
+               //alert( "error" );
+           });
+    }
+
+    function  MakeBadUrl() {
+        @*$.get('@Url.Action("MakeBadURL", "Lastest")',
+           {idImage: imgId},
+           function (response) {
+               //alert( "Done" );
+           }).done(function() {
+               //alert( "second success" );
+           }).fail(function() {
+               //alert( "error" );
+           });*@
+    }
+
+    $('#selectDomain').change(function() {
+        CompaniesPaging(1);
+    });
+</script>

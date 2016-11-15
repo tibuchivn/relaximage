@@ -19,8 +19,9 @@ namespace CheckLiveURLImage
             {
                 //ClearInvalidURLImage();
                 ValidURLProcess obj = new ValidURLProcess();
+                Console.WriteLine("Begin Round" + j);
                 obj.ProcessCheckURL();
-                Console.WriteLine("Round: " + j);
+                Console.WriteLine("Finish Round: " + j);
                 Console.WriteLine("");
             }
 

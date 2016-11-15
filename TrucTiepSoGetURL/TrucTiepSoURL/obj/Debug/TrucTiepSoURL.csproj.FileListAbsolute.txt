@@ -1,9 +1,0 @@
-D:\Public\Project_Tools_\DemoDepVDWeb\TrucTiepSoGetURL\TrucTiepSoURL\bin\Debug\TrucTiepSoURL.exe.config
-D:\Public\Project_Tools_\DemoDepVDWeb\TrucTiepSoGetURL\TrucTiepSoURL\bin\Debug\TrucTiepSoURL.exe
-D:\Public\Project_Tools_\DemoDepVDWeb\TrucTiepSoGetURL\TrucTiepSoURL\bin\Debug\TrucTiepSoURL.pdb
-D:\Public\Project_Tools_\DemoDepVDWeb\TrucTiepSoGetURL\TrucTiepSoURL\bin\Debug\BOLService.dll
-D:\Public\Project_Tools_\DemoDepVDWeb\TrucTiepSoGetURL\TrucTiepSoURL\bin\Debug\HtmlAgilityPack.dll
-D:\Public\Project_Tools_\DemoDepVDWeb\TrucTiepSoGetURL\TrucTiepSoURL\bin\Debug\BOLService.pdb
-D:\Public\Project_Tools_\DemoDepVDWeb\TrucTiepSoGetURL\TrucTiepSoURL\obj\Debug\TrucTiepSoURL.exe
-D:\Public\Project_Tools_\DemoDepVDWeb\TrucTiepSoGetURL\TrucTiepSoURL\obj\Debug\TrucTiepSoURL.pdb
-D:\Public\Project_Tools_\DemoDepVDWeb\TrucTiepSoGetURL\TrucTiepSoURL\obj\Debug\TrucTiepSoURL.csprojResolveAssemblyReference.cache
