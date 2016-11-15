@@ -105,6 +105,13 @@ namespace BOLService
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), isNice, hotLeve, domain, amountReturn);
 			return ((ISingleResult<GetRandomImageByConditionResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CountFrequencyNumber")]
+		public ISingleResult<CountFrequencyNumberResult> CountFrequencyNumber([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> myNumber)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), myNumber);
+			return ((ISingleResult<CountFrequencyNumberResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ImgLink")]
@@ -494,7 +501,7 @@ namespace BOLService
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VietLottID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VietLottID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
 		public int VietLottID
 		{
 			get
@@ -1078,6 +1085,32 @@ namespace BOLService
 				if ((this._IsNice != value))
 				{
 					this._IsNice = value;
+				}
+			}
+		}
+	}
+	
+	public partial class CountFrequencyNumberResult
+	{
+		
+		private System.Nullable<int> _total;
+		
+		public CountFrequencyNumberResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_total", DbType="Int")]
+		public System.Nullable<int> total
+		{
+			get
+			{
+				return this._total;
+			}
+			set
+			{
+				if ((this._total != value))
+				{
+					this._total = value;
 				}
 			}
 		}

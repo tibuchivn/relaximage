@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -284,7 +285,82 @@ namespace BOLService
 
         public void ImportVietLottPage(List<VietlottVNDto> lst)
         {
-            ;
+            if (lst != null && lst.Count > 0)
+            {
+                foreach (var dto in lst)
+                {
+                    try
+                    {
+                        var datePize = dto.DatePize.Trim();
+                        DateTime dt = DateTime.ParseExact(datePize, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                        List<int> listNumberInt = new List<int>();
+                        if (dto.ListNumbers != null && dto.ListNumbers.Count > 0)
+                        {
+                            foreach (var number in dto.ListNumbers)
+                            {
+                                int iNumber = 0;
+                                int.TryParse(number, out iNumber);
+                                if (iNumber > 0)
+                                {
+                                    listNumberInt.Add(iNumber);
+                                }
+                            }
+                        }
+                        listNumberInt = listNumberInt.OrderBy(o => o).ToList();
+                        if (dto.ListNumbers != null && listNumberInt.Count == 6)
+                        {
+                            var obj = new VietlottVN()
+                            {
+                                DayPrize = dt,
+                                DrawId = 0,
+                                FullBlockNumber = String.Join(" ", dto.ListNumbers),
+                                ImportDate = DateTime.UtcNow,
+                                NumberOne = listNumberInt[0],
+                                NumberTwo = listNumberInt[1],
+                                NumberThree = listNumberInt[2],
+                                NumberFour = listNumberInt[3],
+                                NumberFive = listNumberInt[4],
+                                NumberSix = listNumberInt[5]
+                            };
+                            InsertVietLoot(obj);
+                        }
+                    }
+                    catch (Exception exception)
+                    {
+                        ;
+                    }
+                }
+            }
         }
+
+        private void InsertVietLoot(VietlottVN obj)
+        {
+            try
+            {
+                if (obj != null && !_context.VietlottVNs.Any(o => o.DayPrize.Equals(obj.DayPrize)))
+                {
+                    _context.VietlottVNs.InsertOnSubmit(obj);
+                    _context.SubmitChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                
+            }
+        }
+
+        public int[] GetFrequencyNumbers()
+        {
+            int[] arr = new int[45];
+            for (int i = 0; i < 45; i++)
+            {
+                var objNumber = _context.CountFrequencyNumber(i + 1).FirstOrDefault();
+                if (objNumber?.total != null)
+                {
+                    arr[i] = objNumber.total.Value;
+                }
+            }
+            return arr;
+        } 
     }
 }

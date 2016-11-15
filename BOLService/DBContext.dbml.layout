@@ -2,16 +2,16 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DBContext">
   <DataContextMoniker Name="/DBContextDataContext" />
   <nestedChildShapes>
-    <classShape Id="d782e0a2-a5ba-4620-b9f2-fa85e1de6437" absoluteBounds="2, 0.75, 2, 3.1170068359375">
+    <classShape Id="d782e0a2-a5ba-4620-b9f2-fa85e1de6437" absoluteBounds="0.75, 0.75, 2, 3.1170068359375005">
       <DataClassMoniker Name="/DBContextDataContext/ImgLink" />
       <nestedChildShapes>
-        <elementListCompartment Id="7d1b7ec6-d39f-44f5-958c-6279602496c7" absoluteBounds="2.0149999999999997, 1.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="7d1b7ec6-d39f-44f5-958c-6279602496c7" absoluteBounds="0.76499999999999968, 1.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="0fa62948-333c-4d64-b033-7544c3278361" absoluteBounds="5, 1.375, 2, 2.9247054036458331">
+    <classShape Id="2ed3375e-398d-4813-af7a-695647ac9f09" absoluteBounds="3.75, 0.75, 2, 2.9247054036458326">
       <DataClassMoniker Name="/DBContextDataContext/VietlottVN" />
       <nestedChildShapes>
-        <elementListCompartment Id="38bce78f-3404-4b7e-ac14-d12e37572d84" absoluteBounds="5.015, 1.835, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="95430922-27f7-4aff-bbf6-90c87feecafd" absoluteBounds="3.7649999999999997, 1.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

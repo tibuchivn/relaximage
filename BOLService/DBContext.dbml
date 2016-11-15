@@ -18,7 +18,7 @@
   </Table>
   <Table Name="dbo.VietlottVN" Member="VietlottVNs">
     <Type Name="VietlottVN">
-      <Column Name="VietLottID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="VietLottID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="DrawId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="DayPrize" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="FullBlockNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
@@ -69,6 +69,12 @@
       <Column Name="IsCheckLive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="HotLevel" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="IsNice" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CountFrequencyNumber" Method="CountFrequencyNumber">
+    <Parameter Name="myNumber" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CountFrequencyNumberResult">
+      <Column Name="total" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

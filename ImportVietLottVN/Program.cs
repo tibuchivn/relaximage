@@ -12,9 +12,9 @@ namespace ImportVietLottVN
     {
         static void Main(string[] args)
         {
-            LookupVietlotVN();
+            //LookupVietlotVN();
             //TODO: per day
-            //ImportOnePageVietlottVN(1);
+            ImportOnePageVietlottVN(1);
         }
 
         public static void LookupVietlotVN()
@@ -53,6 +53,7 @@ namespace ImportVietLottVN
                             {
                                 if (mychildNode.Name.Equals("tr"))
                                 {
+                                    Console.WriteLine(mychildNode.InnerText);
                                     var obj = new VietlottVNDto();
                                     foreach (var tdChildNodes in mychildNode.ChildNodes)
                                     {
@@ -85,7 +86,10 @@ namespace ImportVietLottVN
                         }
                     }
                 }
-                bolService.ImportVietLottPage(lst);
+                if (lst.Count > 0)
+                {
+                    bolService.ImportVietLottPage(lst);
+                }
                 Console.WriteLine("Finish page ^_^: " + strURL);
             }
             catch (Exception ex)
