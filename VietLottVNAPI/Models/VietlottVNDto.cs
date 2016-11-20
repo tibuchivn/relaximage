@@ -1,19 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace BOLService
+namespace VietLottVNAPI.Models
 {
-    public class VietlottVNDto
+    public class VietlottvnDto
     {
         public string DatePize { get; set; }
         public List<string> ListNumbers { get; set; }
 
         public string StrNumber { get; set; }
 
-        public DateTime DatePizeDateTime { get; set; } 
+        public DateTime DatePizeDateTime { get; set; }
 
         public int VietLottID { get; set; }
 
@@ -35,7 +34,7 @@ namespace BOLService
 
         public DateTime ImportDate { get; set; }
 
-        public VietlottVNDto()
+        public VietlottvnDto()
         {
             ListNumbers = new List<string>();
         }
