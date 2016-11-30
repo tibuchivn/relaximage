@@ -85,6 +85,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="ServiceStack, Version=4.5.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.4.5.4\lib\net45\ServiceStack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="ServiceStack.Common, Version=4.5.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ServiceStack.Common.4.5.4\lib\net45\ServiceStack.Common.dll</HintPath>
       <Private>True</Private>
@@ -261,6 +265,10 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Controllers\VietlottvnAPIController.cs" />
+    <Compile Include="Data\IVietlottvnAppearanceRepository.cs" />
+    <Compile Include="Data\IVietlottvnRandomRepository.cs" />
+    <Compile Include="Data\VietlottvnAppearanceRepository.cs" />
+    <Compile Include="Data\VietlottvnRandomRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

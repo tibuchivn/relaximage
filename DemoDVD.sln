@@ -158,6 +158,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportVietLottVN", "ImportV
 		SolutionBindings = <Solution Location In Database>
 	EndGlobalSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoRedis", "DemoRedis\DemoRedis.csproj", "{E4D3C8FD-D9E7-442E-8C85-6CEDE090ECB2}"
+	GlobalSection(HgVSProperties) = preSolution
+		SolutionIsControlled = True
+		SolutionBindings = <Solution Location In Database>
+	EndGlobalSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietLottVNAPI", "VietLottVNAPI\VietLottVNAPI.csproj", "{2198CB4F-C5EF-4ACD-9FB2-1C4D7799BC7B}"
+	GlobalSection(HgVSProperties) = preSolution
+		SolutionIsControlled = True
+		SolutionBindings = <Solution Location In Database>
+	EndGlobalSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -232,6 +244,14 @@ Global
 		{A12F138A-BF25-4ADF-BF43-F7F93423F21C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A12F138A-BF25-4ADF-BF43-F7F93423F21C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A12F138A-BF25-4ADF-BF43-F7F93423F21C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4D3C8FD-D9E7-442E-8C85-6CEDE090ECB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4D3C8FD-D9E7-442E-8C85-6CEDE090ECB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4D3C8FD-D9E7-442E-8C85-6CEDE090ECB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4D3C8FD-D9E7-442E-8C85-6CEDE090ECB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2198CB4F-C5EF-4ACD-9FB2-1C4D7799BC7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2198CB4F-C5EF-4ACD-9FB2-1C4D7799BC7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2198CB4F-C5EF-4ACD-9FB2-1C4D7799BC7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2198CB4F-C5EF-4ACD-9FB2-1C4D7799BC7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

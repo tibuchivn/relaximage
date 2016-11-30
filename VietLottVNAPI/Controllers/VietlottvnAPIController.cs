@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using VietLottVNAPI.Services;
 
 namespace VietLottVNAPI.Controllers
 {
@@ -9,6 +10,9 @@ namespace VietLottVNAPI.Controllers
         // GET: api/VietlottvnAPI
         public IEnumerable<string> Get()
         {
+            var objService = new VietlottvnService();
+            var lst = objService.GetAllAppearance001();
+
             return new string[] { "value1", "value2" };
         }
 

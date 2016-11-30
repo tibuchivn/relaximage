@@ -16,12 +16,12 @@ namespace VietLottVNAPI
 
         protected void Application_Start()
         {
-            ClientsManager = new PooledRedisClientManager(RedisUri);
+            //ClientsManager = new PooledRedisClientManager(RedisUri);
 
             AreaRegistration.RegisterAllAreas();
 
-            WebApiConfig.Register(GlobalConfiguration.Configuration);
-            ConfigureDependencyResolver(GlobalConfiguration.Configuration);
+            //WebApiConfig.Register(GlobalConfiguration.Configuration);
+            //ConfigureDependencyResolver(GlobalConfiguration.Configuration);
 
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
@@ -52,6 +52,7 @@ namespace VietLottVNAPI
             configuration.DependencyResolver
                 = new AutofacWebApiDependencyResolver(builder.Build());
         }
+
         protected void Application_OnEnd()
         {
             ClientsManager.Dispose();
